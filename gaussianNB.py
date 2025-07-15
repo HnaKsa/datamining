@@ -66,7 +66,6 @@ plt.ylabel("Actual")
 plt.grid(False)
 plt.show()
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 print('accuracy score train :', accuracy_score(y_true=y_train, y_pred=y_pred_train_nb))
 print('accuracy score test :', accuracy_score(y_true=y_test, y_pred=y_pred_test_nb))
