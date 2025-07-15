@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import cross_val_score, StratifiedKFold , cross_val_predict
 import matplotlib.pyplot as plt
 from sklearn import tree
@@ -37,11 +39,6 @@ model_nb.fit(X_train,y_train)
 
 y_pred_train_nb = model_nb.predict(X_train)
 y_pred_test_nb = model_nb.predict(X_test)
-
-import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-
-
 
 
 # Plot confusion matrix for train set
