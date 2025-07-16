@@ -1,0 +1,42 @@
+import pandas as pd
+import numpy as np
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.model_selection import cross_val_score, StratifiedKFold , cross_val_predict
+import matplotlib.pyplot as plt
+from sklearn import tree
+import seaborn as sns
+from sklearn.cluster import KMeans
+from sklearn.decomposition import PCA
+from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
+from reportlab.lib.styles import getSampleStyleSheet
+from io import BytesIO
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.naive_bayes import GaussianNB
+from ..data_loader import df , test_data , attributes
+from ..preprocessing import X_train , y_train , X_test , y_test
+
+# Box plots
+def box_plot(df, attributes):
+    for attribute in attributes[:-1]:
+        sns.boxplot(y = df[attribute], x = df["Disease"])
+        plt.show()
+
+box_plot(df, attributes)
