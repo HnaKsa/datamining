@@ -52,8 +52,8 @@ The main goal is to compare the performance of various machine learning algorith
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/HnaKsa/datamining.git  
+cd datamining  
 ```
 ### 2. Install Dependencies
 ```bash
