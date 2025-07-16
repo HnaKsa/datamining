@@ -116,7 +116,7 @@ Contributions are welcome! Feel free to fork this repo, open issues, or submit p
 ## 📬 Contact
 For questions or collaboration opportunities, please contact:  
 Hanna Kasaei  
-📧 [hannahkasaei@gmail.com.com]  
+📧 [hannahkasaei@gmail.com]  
 🔗 [my linkedin profile](https://www.linkedin.com/in/hnaksa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuVFWMgChQj6SZ46K79NYGg%3D%3D)  
 🐙[my github](https://github.com/HnaKsa)  
 
